@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoDev - Soluções Inovadoras</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos globais */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #001f3f; /* Azul-marinho */
+            margin: 0;
+        }
+
+        header {
+            background-color: #003366; /* Azul mais claro */
+            color: #fff;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            font-size: 6.5em; /* Aumentado */
+            margin-bottom: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #001f3f;
+            padding: 10px 0;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #00bfff;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #00bfff;
+        }
+
+        .section p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: #003366;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            color: #fff;
+            flex: 1 1 calc(33% - 20px); /* Responsividade */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #00bfff;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        footer {
+            background: #001f3f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .button {
+            background: #00bfff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #008dcf;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 0.9em;
+            }
+
+            .card {
+                flex: 1 1 calc(100% - 20px);
+            }
+
+            .section h2 {
+                font-size: 1.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2.5em; /* Ajustado para telas pequenas */
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NeoDev</h1>
+        <h2><p>Soluções Tecnológicas Inovadoras</p></h2>
+    </header>
+    <nav>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#setores">Setores</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="sobre" class="section">
+            <h2>Sobre Nós</h2>
+            <p>A NeoDev é uma empresa de desenvolvimento de software voltada para criar soluções tecnológicas inovadoras, escaláveis e seguras.</p>
+            <p><strong>Missão:</strong> Proporcionar soluções tecnológicas que impulsionem negócios e melhorem a vida das pessoas.</p>
+            <p><strong>Visão:</strong> Ser referência no mercado de desenvolvimento de software pela excelência e inovação.</p>
+            <p><strong>Valores:</strong> Inovação, Qualidade, Segurança, Colaboração, Sustentabilidade.</p>
+        </section>
+        <section id="setores" class="section">
+            <h2>Setores da NeoDev</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/code.png" alt="Desenvolvimento">
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Aplicativos, plataformas web e soluções personalizadas.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/shield.png" alt="Segurança">
+                    <h3>Qualidade e Segurança</h3>
+                    <p>Código seguro e de alta performance.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/artificial-intelligence.png" alt="Inovação">
+                    <h3>Inovação e Pesquisa</h3>
+                    <p>Exploração de tecnologias como IA e blockchain.</p>
+                </div>
+                <div class="card">
+                    <img src="https://img.icons8.com/ios-filled/100/ffffff/classroom.png" alt="Treinamento">
+                    <h3>Consultoria e Treinamento</h3>
+                    <p>Apoio técnico e estratégico para transformação digital.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="section">
+            <h2>Entre em Contato</h2>
+            <p>Fale conosco para saber mais sobre nossas soluções!</p>
+            <button class="button" onclick="exibirMensagem()">Clique Aqui</button>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 NeoDev. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function exibirMensagem() {
+            alert("Obrigado por entrar em contato! Responderemos em breve.");
+        }
+    </script>
+</body>
+</html>
